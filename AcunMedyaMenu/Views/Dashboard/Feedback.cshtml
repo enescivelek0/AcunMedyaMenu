@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AcunMedyaMenu.Entities.UserMessage>
+
+@{
+    ViewData["Title"] = "Feedback";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var icons = new[] { "icon-tag", "icon-credit-card", "icon-close", "icon-bell", "icon-paper-plane" };
+    var colors = new[] { "info", "warning", "danger", "success", "primary" };
+    var random = new Random();
+}
+
+<h3 class="fw-bold mb-3">Geri Bildirim</h3>
+<div class="row">
+    <div class="col-md-12">
+        <ul class="timeline">
+            @for (int i = 0; i < Model.Count(); i++)
+            {
+                var message = Model.ElementAt(i);
+                var invertedClass = i % 2 == 0 ? "" : "timeline-inverted";
+                var randomIcon = icons[random.Next(icons.Length)];
+                var randomColor = colors[random.Next(colors.Length)];
+                <li class="@invertedClass">
+                    <div class="timeline-badge @randomColor">
+                        <i class="@randomIcon"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title"><strong>İsim Soyisim:</strong> @message.Name  -  @message.Subject</h4>
+                            <small>@message.CreatedAt.ToString("dd/MM/yyyy HH:mm")</small>
+                        </div>
+                        <div class="timeline-body">
+                            <p>@message.Message</p>
+                            <p><strong>Email:</strong> @message.Email</p>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

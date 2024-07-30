@@ -1,0 +1,62 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadDashboardViewComponents")
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        @await Component.InvokeAsync("_SidebarDashboardComponentPartial")
+        <div class="main-panel">
+            <div class="main-header">
+                <div class="main-header-logo">
+                    <div class="logo-header" data-background-color="dark">
+                        <a href="index.html" class="logo">
+                            <img src="~/kaiadmin-lite-1.2.0/assets/img/kaiadmin/logo_light.svg"
+                                 alt="navbar brand"
+                                 class="navbar-brand"
+                                 height="20" />
+                        </a>
+                        <div class="nav-toggle">
+                            <button class="btn btn-toggle toggle-sidebar">
+                                <i class="gg-menu-right"></i>
+                            </button>
+                            <button class="btn btn-toggle sidenav-toggler">
+                                <i class="gg-menu-left"></i>
+                            </button>
+                        </div>
+                        <button class="topbar-toggler more">
+                            <i class="gg-more-vertical-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                @await Component.InvokeAsync("_NavbarDashboardComponentPartial")
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="page-inner">
+                <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+                    <div>
+                        <h3 class="fw-bold mb-3">Dashboard</h3>
+                        <h6 class="op-7 mb-2">AcunMedya Akademi Admin Paneli</h6>
+                    </div>
+                    <div class="ms-md-auto py-2 py-md-0">
+                            <a href="/Booking/CreateBooking/" class="btn btn-primary btn-round">Rezervasyon Ekle</a>
+                    </div>
+                </div>
+                    
+                   
+                    <div class="row">
+                        @await Component.InvokeAsync("_LastReservationDashboardComponentPartial")
+                        @await Component.InvokeAsync("_LastOrderDashboardComponentPartial")
+                    </div>
+                   @*  @await Component.InvokeAsync("_WeatherDashboardComponentPartial", new { city = "Ankara" }) *@
+                    
+                    @await Component.InvokeAsync("_GeoLocationDashboardComponentPartial")
+    </div>
+    @await Component.InvokeAsync("_ScriptDashboardComponentPartial")
+</body>
+</html>

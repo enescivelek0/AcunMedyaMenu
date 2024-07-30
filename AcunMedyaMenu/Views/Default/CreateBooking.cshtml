@@ -1,0 +1,81 @@
+﻿@model AcunMedyaMenu.Entities.Booking
+
+<div class="booking" id="booking">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="booking-content">
+                    <div class="section-header">
+                        <p>Bir Masa Ayırın</p>
+                        <h2>Özel anlarınız için hemen rezervasyon yapın.</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Konumu itibarıyla AcunMedya Restaurant, muhteşem manzarasıyla da göz doldurur. İstanbul Boğazı’nın eşsiz güzelliklerine şahitlik ederek yemeğinizi yiyebilir, keyifli sohbetlerin tadını çıkarabilirsiniz. Ayrıca, Ulaşım kolaylığı sayesinde mekana ulaşmak da oldukça pratik ve zahmetsizdir.
+                        </p>
+                        <p>
+                            Rezervasyon, danışma ve bilgi için lütfen AcunMedya Restaurant iletişim kanallarımızdan bize ulaşın.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="booking-form">
+                    <form method="post" asp-action="CreateBooking" asp-controller="Default">
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" asp-for=Name placeholder="Adınız Soyadınız" required="required" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="far fa-user"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control" asp-for=Email placeholder="Email Adresiniz" required="required" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" asp-for="Phone" placeholder="Telefon Numarası" required="required" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group date" id="date" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" asp-for=BookingDate placeholder="Tarih Seçin" data-target="#date" data-toggle="datetimepicker" />
+                                <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group time" id="time" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" asp-for=BookingTime placeholder="Saat Seçin" data-target="#time" data-toggle="datetimepicker" />
+                                <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="number" class="form-control" placeholder="Kişi Sayısı" asp-for=GuestCount required="required" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn custom-btn" type="submit">Rezervasyonu Yap</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

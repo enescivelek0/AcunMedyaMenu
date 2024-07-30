@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\enesc\\source\\repos\\AcunMedyaMenu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD19104-9EEA-440D-A949-257DB4D8B26C}|AcunMedyaMenu\\AcunMedyaMenu.csproj|c:\\users\\enesc\\source\\repos\\acunmedyamenu\\acunmedyamenu\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CD19104-9EEA-440D-A949-257DB4D8B26C}|AcunMedyaMenu\\AcunMedyaMenu.csproj|solutionrelative:acunmedyamenu\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD19104-9EEA-440D-A949-257DB4D8B26C}|AcunMedyaMenu\\AcunMedyaMenu.csproj|c:\\users\\enesc\\source\\repos\\acunmedyamenu\\acunmedyamenu\\views\\shared\\components\\_sidebardashboardcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CD19104-9EEA-440D-A949-257DB4D8B26C}|AcunMedyaMenu\\AcunMedyaMenu.csproj|solutionrelative:acunmedyamenu\\views\\shared\\components\\_sidebardashboardcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 152,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\enesc\\source\\repos\\AcunMedyaMenu\\AcunMedyaMenu\\Views\\Shared\\Components\\_SidebarDashboardComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "AcunMedyaMenu\\Views\\Shared\\Components\\_SidebarDashboardComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\enesc\\source\\repos\\AcunMedyaMenu\\AcunMedyaMenu\\Views\\Shared\\Components\\_SidebarDashboardComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "AcunMedyaMenu\\Views\\Shared\\Components\\_SidebarDashboardComponentPartial\\Default.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADEAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T20:44:03.933Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\enesc\\source\\repos\\AcunMedyaMenu\\AcunMedyaMenu\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "AcunMedyaMenu\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\enesc\\source\\repos\\AcunMedyaMenu\\AcunMedyaMenu\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "AcunMedyaMenu\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T11:21:27.66Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

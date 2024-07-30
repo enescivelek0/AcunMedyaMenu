@@ -1,0 +1,106 @@
+﻿@model InstaViewModel.Data
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 class="fw-bold mb-3">Customized Card</h3>
+<div class="row">
+    <a href="/CustomizerCard/Finance">Git</a>
+    <div class="col-md-4">
+        <div class="card card-post card-round">
+            <img class="card-img-top"
+                 src="https://cdn.corporatefinanceinstitute.com/assets/database-1024x703.jpeg"
+                 alt="Card image cap" />
+            <div class="card-body">
+                <div class="d-flex">
+                    <div class="avatar">
+                        <img src="https://avatars.githubusercontent.com/u/60387787?v=4"
+                             alt="..."
+                             class="avatar-img rounded-circle" />
+                    </div>
+                    <div class="info-post ms-2">
+                        <p class="username">Enes Civelek</p>
+                        <p class="date text-muted">
+                            May 19, 2024
+                        </p>
+                    </div>
+                </div>
+                <div class="separator-solid"></div>
+                <p class="card-category text-info mb-1">
+                    <a href="#">MEDIUM YAZISI</a>
+                </p>
+                <h3 class="card-title">
+                    <a href="#"> Database First Yaklaşımı </a>
+                </h3>
+                <p class="card-text">
+                    Yazılım geliştirme sürecinde, veri tabanı ve kod yapısının uyum içinde olması oldukça önemlidir. Bu bağlamda kullanılan farklı yaklaşımlar vardır ve bunlardan biri de “Database First” (Önce Veri Tabanı) yöntemidir. Bu makalede, Database First yaklaşımının ne olduğunu, nasıl çalıştığını ve temel adımlarını ele alacağız.
+                </p>
+                <a href="https://medium.com/enescvlk/database-first-yaklaşımı-ecbd89d2f5bc" class="btn btn-primary btn-rounded btn-sm">Devamını Oku</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    @* Instagram *@
+    <div class="col-md-4">
+        <div class="card card-profile">
+            <div class="card-header"
+                 style="background-image: url('assets/img/blogpost.jpg')">
+                <div class="profile-picture">
+                    <div class="avatar avatar-xl">
+                        <img src="~/kaiadmin-lite-1.2.0/assets/img/profile.jpg"
+                             alt="..."
+                             class="avatar-img rounded-circle" />
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="user-profile text-center">
+                    <div class="name">@Model.Username</div>
+                    <div class="job">@Model.FullName</div>
+                    <div class="desc">@Model.Biography</div>
+                    <div class="social-media">
+                        <a class="btn btn-primary btn-sm btn-link"
+                           rel="publisher"
+                           href="https://www.facebook.com/acunmedyaakademi/?locale=tr_TR">
+                            <span class="btn-label just-icon">
+                                <i class="icon-social-facebook"></i>
+                            </span>
+                        </a>
+                        <a class="btn btn-danger btn-sm btn-link"
+                           rel="publisher"
+                           href="https://www.instagram.com/acunmedyaakademi/?hl=tr">
+                            <span class="btn-label just-icon">
+                                <i class="icon-social-instagram"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="view-profile">
+                        <a href="https://www.instagram.com/acunmedyaakademi/?hl=tr" class="btn btn-secondary w-100">Profili görüntüle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row user-stats text-center">
+                    <div class="col">
+                        <div class="number">@Model.MediaCount</div>
+                        <div class="title">Paylaşım sayısı</div>
+                    </div>
+                    <div class="col">
+                        <div class="number">@Model.FollowerCount</div>
+                        <div class="title">Takipçi sayısı</div>
+                    </div>
+                    <div class="col">
+                        <div class="number">@Model.FollowingCount</div>
+                        <div class="title">Takip edilen sayısı</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
